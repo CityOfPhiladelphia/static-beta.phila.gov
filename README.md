@@ -12,17 +12,18 @@
     scripts/snapshot.sh beta.phila.gov
     ```
 
-3. Go into the `_site` folder and restore this readme
+3. Go into the `_site` folder and test the site
 
     ```bash
     cd _site
-    git checkout README.md
+    python -m SimpleHTTPServer
     ```
 
-4. Commit the entire folder and push
+4. Restore the README, commit the entire folder and push
 
     ```bash
-    git add -u .
+    git checkout README.md
+    git add .
     git commit -m "Site snapshot from $(date)"
     git push
     ```
