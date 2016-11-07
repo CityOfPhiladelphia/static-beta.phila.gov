@@ -638,6 +638,9 @@ a[href*="google.com/calendar"]:after {
     line-height: 3rem;
     display: block; }
 
+.event-box {
+  border: 0px; }
+
 @media only screen and (min-width: 40.063em) {
   .calendar-row {
     background: url("//alpha.phila.gov/media/20160526164514/calendar-bg.jpg") no-repeat center center;
@@ -1473,6 +1476,89 @@ a.action-panel[href*="google.com/calendar"]:after {
         width: 100%;
         z-index: -2; } }
 
+.hero-content {
+  margin-top: 0;
+  font-family: 'Montserrat', 'Tahoma', sans-serif; }
+  @media only screen and (min-width: 40em) {
+    .hero-content {
+      background-size: cover;
+      background-repeat: no-repeat; } }
+  .hero-content .text-overlay h1 {
+    font-size: 2.5rem;
+    line-height: 1; }
+    @media only screen and (min-width: 40em) {
+      .hero-content .text-overlay h1 {
+        font-size: 3.5rem; } }
+  .hero-content .text-overlay .sub-title {
+    font-size: 1rem;
+    line-height: 1.25; }
+    @media only screen and (min-width: 40em) {
+      .hero-content .text-overlay .sub-title {
+        font-size: 1.25rem; } }
+  .hero-content .department-nav #site-nav {
+    text-align: left; }
+    @media screen and (min-width: 40em) {
+      .hero-content .department-nav #site-nav {
+        background: none;
+        margin-bottom: 0;
+        text-align: center; }
+        .hero-content .department-nav #site-nav .department-menu {
+          background: none; }
+          .hero-content .department-nav #site-nav .department-menu > li {
+            display: inline-block;
+            background-color: #2176d2; }
+            .hero-content .department-nav #site-nav .department-menu > li > a {
+              color: #fff;
+              padding: 0.5rem 1rem; }
+          .hero-content .department-nav #site-nav .department-menu a:hover, .hero-content .department-nav #site-nav .department-menu a:active {
+            background: #444; }
+          .hero-content .department-nav #site-nav .department-menu .is-dropdown-submenu {
+            top: auto;
+            left: 0; } }
+
+.home .beta-message p {
+  font-weight: 400;
+  font-size: 1.15rem; }
+
+.home .beta-message .h1 {
+  font-size: 2.5rem;
+  line-height: 1; }
+  @media only screen and (min-width: 40em) {
+    .home .beta-message .h1 {
+      font-size: 3.5rem; } }
+
+.home .beta-message .sub-title {
+  font-size: 1.5rem;
+  line-height: 1.25; }
+  @media only screen and (min-width: 40em) {
+    .home .beta-message .sub-title {
+      font-size: 2rem; } }
+
+.home .mask {
+  position: absolute;
+  bottom: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100px;
+  background-color: white; }
+
+.home .overlap {
+  position: relative;
+  background: none; }
+
+.home .photo-credit.small-text {
+  display: none; }
+  @media only screen and (min-width: 64em) {
+    .home .photo-credit.small-text {
+      display: inline-block;
+      font-style: italic;
+      font-size: .75rem;
+      color: #a1a1a1;
+      padding: 0.25rem 0.5rem;
+      position: absolute;
+      bottom: 105px;
+      right: 0; } }
+
 .hero-measureline {
   position: absolute;
   white-space: nowrap;
@@ -1752,6 +1838,10 @@ nav#services-nav .service-menu > li {
     .panel.info .symbol.small {
       line-height: 3rem;
       font-size: 2rem; }
+
+.info-block {
+  font-size: 1.3333333333rem;
+  font-style: italic; }
 
 .large-text {
   font-size: 6rem;
@@ -2127,7 +2217,7 @@ header .logo img {
     background: none; }
   .home .hero-content .photo-credit.small-text {
     display: none; }
-    @media only screen and (min-width: 64em) {
+    @media only screen and (min-width: 66em) {
       .home .hero-content .photo-credit.small-text {
         display: inline-block;
         font-style: italic;
@@ -2179,6 +2269,9 @@ header .logo img {
       -webkit-transition: opacity .2s ease-in-out; }
       .home .hero-content .call-to-action a:hover {
         opacity: .6; }
+  @media screen and (min-width: 40em) {
+    .home .hero-content .columns-5 .medium-5 {
+      width: 19.99999999%; } }
 
 .home .feedback .up {
   background: #f0f0f0; }
@@ -2752,6 +2845,12 @@ footer.site-footer {
     footer.site-footer.site-footer ul.inline-list li {
       padding: 0 0 1rem 0; }
 
+.one-quarter-layout div.row {
+  border-bottom: 1px;
+  border-bottom-style: solid; }
+  .one-quarter-layout div.row:last-of-type {
+    border-bottom-width: 0px; }
+
 #site-wide-alert a,
 #site-wide-alert a:visited {
   color: #fff; }
@@ -2986,11 +3085,18 @@ footer a.button:hover, footer a.button:active {
     font-weight: 400;
     letter-spacing: .05rem;
     cursor: pointer; }
-    .feedback .call-to-action .fa.fa-lightbulb-o {
-      font-size: 2rem; }
-      @media only screen and (min-width: 40em) {
-        .feedback .call-to-action .fa.fa-lightbulb-o {
-          vertical-align: middle; } }
+    .feedback .call-to-action a:link,
+    .feedback .call-to-action a:active,
+    .feedback .call-to-action a:hover {
+      font-weight: 400;
+      color: #444; }
+    .feedback .call-to-action .fa {
+      color: #444; }
+      .feedback .call-to-action .fa.fa-lightbulb-o {
+        font-size: 2rem; }
+        @media only screen and (min-width: 40em) {
+          .feedback .call-to-action .fa.fa-lightbulb-o {
+            vertical-align: middle; } }
   .feedback .arrow {
     width: 0;
     height: 0;
